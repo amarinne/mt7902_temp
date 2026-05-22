@@ -26,7 +26,7 @@ set -e
 
 # Variables declaration
 SCRIPT_DIR=$(pwd)
-LINUX_DIR="$(SCRIPT_DIR)/linux-$(uname -r | cut -d'.' -f1,2)"
+LINUX_DIR="$SCRIPT_DIR/linux-$(uname -r | cut -d'.' -f1,2)"
 BT_DIR="$LINUX_DIR/drivers/bluetooth"
 WIFI_DIR="$LINUX_DIR/drivers/net/wireless/mediatek/mt76" # SIXSEVENNN (cringe)
 
